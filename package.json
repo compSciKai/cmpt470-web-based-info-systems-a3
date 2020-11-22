@@ -1,0 +1,19 @@
+{
+  "name": "a34",
+  "version": "1.0.0",
+  "description": "a project for cmpt470 - web-based info systems course at SFU",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/compscikai/cmpt470-web-based-info-systems-a3.git"
+  },
+  "author": "Kainoa Seaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/compscikai/cmpt470-web-based-info-systems-a3/issues"
+  },
+  "homepage": "https://github.com/compscikai/cmpt470-web-based-info-systems-a3#readme"
+}
