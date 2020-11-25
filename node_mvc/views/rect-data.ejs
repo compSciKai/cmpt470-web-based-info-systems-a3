@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Happy Rectangles []</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      .container { display: inline-block; width:100%; }
+      .rectangle { margin: 10px; float: left; }
+      .actions { margin: 10x; float: right; }
+  </style>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Happy Rectangles</h2>
+
+    <%
+    if(fetchData.length!=0){
+    var i=1;
+    console.log(fetchData);
+    fetchData.forEach(function(data){
+    %>
+
+    <div class="container">
+        <div class="rectangle" style="height: <%=data.Height%>px; width:
+            <%=data.Width%>px; background-color: <%=data.Color%>;"></div>
+        <div class="actions">
+            <a href="actions/edit/"><i class='material-icons' style="font-size:24px">edit</i></a>
+            <a href="actions/delete/"><i class='material-icons' style="font-size:24px">cancel</i></a>
+        </div>
+    </div>
+
+    <%  i++; }) %>
+    <% } else{ %>
+        <h1>No Rectangles in cmpt470 database</h1>
+    <% } %>
+</body>
+</html>
