@@ -28,8 +28,8 @@
         <div class="rectangle" style="height: <%=data.Height%>px; width:
             <%=data.Width%>px; background-color: <%=data.Color%>;"></div>
         <div class="actions">
-            <a href="actions/edit/"><i class='material-icons' style="font-size:24px">edit</i></a>
-            <a href="actions/delete/"><i class='material-icons' style="font-size:24px">cancel</i></a>
+            <a href="edit/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: black">edit</i></a>
+            <a href="delete/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: black">cancel</i></a>
         </div>
     </div>
 
@@ -37,5 +37,6 @@
     <% } else{ %>
         <h1>No Rectangles in cmpt470 database</h1>
     <% } %>
+    <a href="form"><button>Add More</button></a>
 </body>
 </html>

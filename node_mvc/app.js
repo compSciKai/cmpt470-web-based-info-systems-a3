@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 //var rectangleRouter = require('./routes/rectangles');
 var createRouter = require("./routes/create");
 var readRouter = require("./routes/read");
+var updateRouter = require("./routes/update");
+var deleteRouter = require("./routes/delete");
 
 var app = express();
 
@@ -24,6 +26,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use("/actions/", createRouter);
 app.use("/actions/", readRouter);
+app.use("/actions/", updateRouter);
+app.use("/actions/", deleteRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
