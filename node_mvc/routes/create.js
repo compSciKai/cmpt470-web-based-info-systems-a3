@@ -3,6 +3,6 @@ var router = express.Router();
 var createCon = require("../controller/create");
 
 router.get('/form', createCon.rectForm);
-router.post('/create', createCon.createData)
+router.post('/create', createCon.createData);
 
 module.exports = router;

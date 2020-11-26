@@ -11,12 +11,12 @@ module.exports = {
         let inputData = {
             width: req.body.width,
             height: req.body.height,
-            color: req.body.color
-        };
+            color: req.body.color,
+            bob: req.body.bob };
 
         // construct model from data object & send to database
         createModel.createData(inputData, function(data) {
-            res.redirect('/actions/form');
+            res.redirect('/actions/show');
             console.log(data.affectedRows + " rectangle created");
         });
     }

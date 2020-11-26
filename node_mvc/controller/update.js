@@ -17,7 +17,8 @@ module.exports = {
         let inputData = {
             Width: req.body.width,
             Height: req.body.height,
-            Color: req.body.color
+            Color: req.body.color,
+            Bob: req.body.bob
         };
 
         let updateID = req.params.Id;

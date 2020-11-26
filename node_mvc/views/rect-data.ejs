@@ -4,6 +4,7 @@
   <title>Happy Rectangles []</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <style>
       .container { display: inline-block; width:100%; }
       .rectangle { margin: 10px; float: left; }
@@ -14,8 +15,13 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
-    <h2>Happy Rectangles</h2>
+<body class="w3-container w3-black">
+    <br>
+    <div class="w3-container w3-indigo">
+        <h2>Happy Rectangles</h2>
+    </div>
+    <div class="w3-container w3-light-grey">
+        <br>
 
     <%
     if(fetchData.length!=0){
@@ -26,17 +32,24 @@
 
     <div class="container">
         <div class="rectangle" style="height: <%=data.Height%>px; width:
-            <%=data.Width%>px; background-color: <%=data.Color%>;"></div>
+            <%=data.Width%>px; background-color: <%=data.Color%>;
+            <% if (data.Bob) { %>
+                background-image: url('../images/bobbyr.jpeg'); background-size: cover
+            <% } %>
+                "></div>
         <div class="actions">
-            <a href="edit/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: black">edit</i></a>
-            <a href="delete/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: black">cancel</i></a>
+            <a href="edit/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: grey">edit</i></a>
+            <a href="delete/<%=data.Id%>"><i class='material-icons' style="font-size:24px; color: lightcoral">cancel</i></a>
         </div>
     </div>
 
     <%  i++; }) %>
     <% } else{ %>
-        <h1>No Rectangles in cmpt470 database</h1>
+        <h3>No Rectangles in cmpt470 database</h1>
     <% } %>
-    <a href="form"><button>Add More</button></a>
+    <a href="form"><button class="w3-btn w3-indigo w3-ripple w3-round" style="margin-bottom: 25px"><b>Add More</b></button></a>
+    <br>
+    </div>
+    <br>
 </body>
 </html>
