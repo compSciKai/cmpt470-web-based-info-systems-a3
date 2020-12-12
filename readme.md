@@ -11,9 +11,7 @@ I used an ID as a primary key for the rectable table (database entry) so that th
 - The ability to change attributes of any of the rectangles.
 - The ability to display (draw) all rectangles currently in the database. 
 
-For example, if you currently have two rectangles in your database as follows:
-
-Rectangle Database
+For example, if I currently have two rectangles in my database:
 
 ID | Width | Height | Color | bob_ross
 ---|-------|--------|-------|----------
