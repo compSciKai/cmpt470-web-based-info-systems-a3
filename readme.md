@@ -12,12 +12,12 @@ I used an ID as a primary key for the rectable table (database entry) so that th
 - The ability to display (draw) all rectangles currently in the database. 
 
 For example, if you currently have two rectangles in your database as follows:
+
 Rectangle Database
---------------------------------------
+
 ID | Width | Height | Color | bob_ross
 ---|-------|--------|-------|----------
 1 | 90 | 15 | red | no
---|----|----|-----|---
 2 | 30 | 20 | black | yes
 
 View:
