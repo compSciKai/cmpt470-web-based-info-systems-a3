@@ -40,9 +40,4 @@ with the following properties:
 - Allow traffic on port 3306
 
 The main application connected to the database instance through the internal IP address,
-so the communication between server and database would be guaranteed each time the external IP was renewed. For
-you may still receive marks for any work that you have completed.
-Marking Scheme
-Adding, Deleting, and Editing rectangles: 14 Marks
-Displaying Rectangles properly: 10 Marks
-Creativity (relative): 4 Marks
+so the communication between server and database would be guaranteed each time the external IP was renewed.
